@@ -1,0 +1,24 @@
+# Archivos específicos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# --- BACKEND (Python) ---
+# Entorno virtual de Python
+venv/
+__pycache__/
+*.pyc
+
+# Carpetas de datos y modelos grandes
+emotions_data/      # <--- ESTA LÍNEA FALTABA
+fine_tuned_model/
+
+# --- FRONTEND (Node.js / Next.js) ---
+# Carpeta de dependencias
+node_modules/
+# Carpeta de build de Next.js
+.next/
+# Logs y archivos de entorno
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.env.local
