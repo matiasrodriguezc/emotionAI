@@ -1,10 +1,10 @@
 // frontend/app/layout.tsx
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google"; // <-- 1. COMENTA O BORRA ESTA LÍNEA
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] }); // <-- 2. COMENTA O BORRA ESTA LÍNEA
 
 export const metadata: Metadata = {
   title: "EmotionAI | XLNet Classifier",
@@ -18,7 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      {/* 3. BORRA className={inter.className} DE AQUÍ */}
+      <body>{children}</body>
     </html>
   );
 }
