@@ -22,7 +22,7 @@ class handler(BaseHTTPRequestHandler):
         try:
             # --- LÓGICA DE DESCARGA Y CARGA DEL MODELO ---
             # Reemplaza con tu usuario/nombre_del_repo de Hugging Face
-            repo_id = "tu-usuario-hf/xlnet-emotion-classifier-es"
+            repo_id = "matiasrodriguezc/xlnet-emotion-classifier-es"
             
             # Vercel solo permite escribir en el directorio /tmp
             cache_path = "/tmp/model_cache"
