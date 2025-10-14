@@ -1,7 +1,3 @@
-¡Absolutamente\! Mil disculpas. Aquí tienes el `README.md` completo, final y pulido, en inglés.
-
------
-
 # EmotionAI: Emotion Classifier with XLNet and Next.js
 
 **EmotionAI** is a full-stack web application that uses a fine-tuned XLNet model to perform real-time emotion classification on user-provided text. The project demonstrates an end-to-end MLOps workflow, from data preprocessing and model training to building a REST API and creating an interactive, modern user interface.
