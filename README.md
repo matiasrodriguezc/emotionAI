@@ -2,8 +2,6 @@
 
 **EmotionAI** is a full-stack web application that uses a fine-tuned XLNet model to perform real-time emotion classification on user-provided text. The project demonstrates an end-to-end MLOps workflow, from data preprocessing and model training to building a REST API and creating an interactive, modern user interface.
 
-*A link to the live demo will be available once deployed.*
-
 ## 📋 Key Features
 
   * **Intelligent Backend:** A REST API built with **FastAPI** that serves a fine-tuned **XLNet** model for text classification into 4 emotion classes (joy, sadness, anger, fear).
