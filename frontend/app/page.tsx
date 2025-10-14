@@ -1,5 +1,3 @@
-// frontend/app/page.tsx
-
 "use client"
 
 import { useState } from "react"
@@ -28,7 +26,7 @@ export default function Home() {
     setError(null);
 
     try {
-      const backendUrl = "/api/analyze";
+      const backendUrl = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/analyze";
 
       const response = await fetch(backendUrl, {
         method: "POST",

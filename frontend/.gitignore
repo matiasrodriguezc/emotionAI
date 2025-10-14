@@ -1,0 +1,48 @@
+# Archivos específicos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# --------------------
+# --- BACKEND (Python) ---
+# --------------------
+
+# Entorno virtual de Python
+/backend/venv/
+
+# Carpetas de caché de Python
+__pycache__/
+*.pyc
+
+# Carpetas de datos y modelos grandes (NO SUBIR A GIT)
+/backend/emotions_data/
+/backend/fine_tuned_model/
+
+
+# --------------------
+# --- FRONTEND (Node.js / Next.js) ---
+# --------------------
+# (Estas son las reglas que ya tenías, pero con prefijo para más orden)
+
+# Carpeta de dependencias
+/frontend/node_modules/
+
+# Carpeta de build de Next.js
+/frontend/.next/
+/frontend/out/
+
+# Production
+/frontend/build
+
+# Logs y archivos de entorno
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+/frontend/.env*
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts

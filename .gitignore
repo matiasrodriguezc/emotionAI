@@ -9,8 +9,8 @@ __pycache__/
 *.pyc
 
 # Carpetas de datos y modelos grandes
-emotions_data/      # <--- ESTA LÍNEA FALTABA
-fine_tuned_model/
+backend/emotions_data/      # <--- ESTA LÍNEA FALTABA
+backend/fine_tuned_model/
 
 # --- FRONTEND (Node.js / Next.js) ---
 # Carpeta de dependencias

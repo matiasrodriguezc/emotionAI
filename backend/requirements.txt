@@ -5,3 +5,4 @@ torch
 sentencepiece
 python-multipart
 huggingface_hub
+protobuf
