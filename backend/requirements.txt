@@ -4,5 +4,6 @@ transformers
 torch
 sentencepiece
 python-multipart
+pydantic
 huggingface_hub
 protobuf
