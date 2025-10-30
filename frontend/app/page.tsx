@@ -26,9 +26,17 @@ export default function Home() {
     setError(null);
 
     try {
-      const backendUrl = process.env.NEXT_PUBLIC_API_URL || "https://matiasrodriguezc-emotion-ai-api.hf.space/analyze";
+      // 1. Obtenemos la URL BASE desde Vercel.
+      //    (OJO: El fallback aquí NO debe tener /analyze)
+      const baseUrl = process.env.NEXT_PUBLIC_API_URL || "https://matiasrodriguezc-emotion-ai-api.hf.space";
+      
+      // 2. Nos aseguramos de que la URL base NO tenga una barra al final
+      const cleanBaseUrl = baseUrl.replace(/\/$/, '');
 
-      const response = await fetch(backendUrl, {
+      // 3. Construimos la URL completa del endpoint
+      const endpoint = `${cleanBaseUrl}/analyze`;
+
+      const response = await fetch(endpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
