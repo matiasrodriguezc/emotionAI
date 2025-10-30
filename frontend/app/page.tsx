@@ -26,7 +26,7 @@ export default function Home() {
     setError(null);
 
     try {
-      const backendUrl = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/analyze";
+      const backendUrl = process.env.NEXT_PUBLIC_API_URL || "https://matiasrodriguezc-emotion-ai-api.hf.space/analyze";
 
       const response = await fetch(backendUrl, {
         method: "POST",
